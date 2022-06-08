@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: coral;
+}
+.mail-area-container{
+    background-color: whitesmoke;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 25px;
+    height: 200px;
+    padding-top: 25px;
+}
+h1{
+    text-align: center;
+}
+.mail-area-container-bottom{
+    padding: 60px 30px;
+}
+button{
+    padding: 5px 10px;
+    margin-left: 10px;
+}
