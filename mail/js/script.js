@@ -1,3 +1,5 @@
+// controllo della mail inserita rispetto un ipotetico db 
+
 const mailList = ['luffeisoddeyei-7392@yopmail.com','crigreuticreige-3155@yopmail.com','xoinipoutife-3126@yopmail.com',
                   'fonopralletra-6714@yopmail.com','nakubraboce-1533@yopmail.com','gruprofrasugre-8044@yopmail.com']
 
@@ -23,8 +25,10 @@ button.addEventListener('click',
     //se la trovo comunico all'utente che può acceddere, senno gli chiedo di iscriversi
     if (mailFound) {
         message =  'Puoi accedere'
+        document.getElementById('email').value = ''; 
     } else {
         message = 'Non risulti registrato al sito'
+        document.getElementById('email').value = ''; 
     }
     document.getElementById('message').innerHTML = message
 }    

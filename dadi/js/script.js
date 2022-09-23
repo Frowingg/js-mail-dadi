@@ -1,3 +1,5 @@
+// generatore casuali di numero per una sfida a chi lancia il numero più alto tra user e computer
+
 // mi collego al computer
 const button = document.getElementById('play-button');
 
@@ -8,12 +10,10 @@ button.addEventListener('click',
         // creo il numero del giocatore
         userNumber = Math.floor((Math.random() *6) + 1);
         document.getElementById('user-number').innerHTML = userNumber;
-        // document.getElementById('user-number').innerHTML = Math.floor((Math.random() *6) + 1);
 
         // creo il numero del pc
         pcNumber = Math.floor((Math.random() *6) + 1);
         document.getElementById('pc-number').innerHTML = pcNumber;
-        // document.getElementById('pc-number').innerHTML = Math.floor((Math.random() *6) + 1);
 
         // informo il giocatore del risultato della partita
         if(userNumber > pcNumber) {
